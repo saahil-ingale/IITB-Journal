@@ -1,0 +1,32 @@
+|DUT
+input_vector[0] => demux:add_instance.e
+input_vector[1] => demux:add_instance.d
+input_vector[2] => demux:add_instance.c
+input_vector[3] => demux:add_instance.b
+input_vector[4] => demux:add_instance.a
+output_vector[0] << demux:add_instance.y
+
+
+|DUT|demux:add_instance
+a => S:g1.A
+b => S:g1.B
+c => S:g1.C
+d => S:g1.D
+e => S:g1.E
+y <= S:g1.Y
+
+
+|DUT|demux:add_instance|S:g1
+A => Y.IN0
+A => Y.IN0
+A => Y.IN0
+B => ~NO_FANOUT~
+C => Y.IN1
+C => Y.IN1
+C => Y.IN1
+D => ~NO_FANOUT~
+E => Y.IN1
+E => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

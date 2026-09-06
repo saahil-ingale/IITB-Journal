@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Gates.all;
+
+entity mux4 is
+    port(
+        a1, a2, a3, a4, b1, b2 : in std_logic;  -- c = Cin
+        output  : out std_logic
+    );
+end mux4;
+
+architecture struct of mux4 is
+    signal s1, s2 : std_logic;
+begin
+
+	 g1 : MUX2x1 port map(a2, a1, b1, s1);
+	 g2 : MUX2x1 port map(a4, a3, b1, s2);
+	 g3 : MUX2x1 port map(s2, s1, b2, output);
+end struct;

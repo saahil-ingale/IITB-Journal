@@ -1,0 +1,41 @@
+|DUT
+input_vector[0] => d_flip_flop:add_instance.reset
+input_vector[1] => d_flip_flop:add_instance.clk
+output_vector[0] << d_flip_flop:add_instance.Q_out[0]
+output_vector[1] << d_flip_flop:add_instance.Q_out[1]
+output_vector[2] << d_flip_flop:add_instance.Q_out[2]
+
+
+|DUT|d_flip_flop:add_instance
+clk => dff_set:bit0_flop.clock
+clk => dff_set:bit1_flop.clock
+clk => dff_set:bit2_flop.clock
+reset => dff_set:bit0_flop.set
+reset => dff_set:bit1_flop.set
+reset => dff_set:bit2_flop.set
+Q_out[0] <= dff_set:bit0_flop.Q
+Q_out[1] <= dff_set:bit1_flop.Q
+Q_out[2] <= dff_set:bit2_flop.Q
+
+
+|DUT|d_flip_flop:add_instance|dff_set:bit0_flop
+D => Q~reg0.DATAIN
+clock => Q~reg0.CLK
+set => Q~reg0.PRESET
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|d_flip_flop:add_instance|dff_set:bit1_flop
+D => Q~reg0.DATAIN
+clock => Q~reg0.CLK
+set => Q~reg0.PRESET
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|d_flip_flop:add_instance|dff_set:bit2_flop
+D => Q~reg0.DATAIN
+clock => Q~reg0.CLK
+set => Q~reg0.PRESET
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,16 @@
+|DUT
+input_vector[0] => D_FF:add_instance.B
+input_vector[1] => D_FF:add_instance.A
+output_vector[0] <= D_FF:add_instance.C
+output_vector[1] <= D_FF:add_instance.S
+
+
+|DUT|D_FF:add_instance
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+

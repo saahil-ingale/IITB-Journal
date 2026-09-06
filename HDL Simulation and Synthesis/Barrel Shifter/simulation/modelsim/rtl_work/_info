@@ -1,0 +1,896 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Barrel Shifter/simulation/modelsim
+Eand_2
+Z1 w1780483653
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8D:/Barrel Shifter/Gates.vhdl
+Z5 FD:/Barrel Shifter/Gates.vhdl
+l0
+L122 1
+ViaD<RL7;M?h9Zhd[hEad02
+!s100 o]=^gYFm;1_>Lnm2WnlTG0
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1780718012
+!i10b 1
+Z8 !s108 1780718012.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/Barrel Shifter/Gates.vhdl|
+Z10 !s107 D:/Barrel Shifter/Gates.vhdl|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aequations
+R2
+R3
+DEx4 work 5 and_2 0 22 iaD<RL7;M?h9Zhd[hEad02
+!i122 0
+l127
+L126 4
+V_UP7N5k:?V]O=nU0Q[Z0?2
+!s100 05eM7=cYSFTLzA[o6i_FY2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ebarrelshift
+Z13 w1780713470
+R2
+R3
+!i122 2
+R0
+Z14 8D:/Barrel Shifter/demux.vhd
+Z15 FD:/Barrel Shifter/demux.vhd
+l0
+L4 1
+VD?=K6U0oi`Sf:U[4b^1P[1
+!s100 5BU6gEoHIMg]S<KhO[H9[1
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|D:/Barrel Shifter/demux.vhd|
+Z17 !s107 D:/Barrel Shifter/demux.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 11 barrelshift 0 22 D?=K6U0oi`Sf:U[4b^1P[1
+!i122 2
+l54
+L10 61
+VBJ;<cdIM5hm>^bKnn5Z8n1
+!s100 <3bdolh6;Gh4NT1@mLnPg2
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Ebitreverse
+Z18 w1780713748
+R2
+R3
+!i122 6
+R0
+Z19 8D:/Barrel Shifter/bitreverse.vhd
+Z20 FD:/Barrel Shifter/bitreverse.vhd
+l0
+L4 1
+V:TPCO6EgemO[>0c4YgdPU2
+!s100 L`<PWeKTRIooEB8L]T61E3
+R6
+31
+Z21 !s110 1780718013
+!i10b 1
+Z22 !s108 1780718013.000000
+Z23 !s90 -reportprogress|300|-93|-work|work|D:/Barrel Shifter/bitreverse.vhd|
+Z24 !s107 D:/Barrel Shifter/bitreverse.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 10 bitreverse 0 22 :TPCO6EgemO[>0c4YgdPU2
+!i122 6
+l11
+L10 10
+V=@[5d3aTT92L;BDVAaCAI1
+!s100 n9]8_2LE[7STCZfJmjAMA1
+R6
+31
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R11
+R12
+Edemux_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L107 1
+VZnYZ^3RBPP?<_h:NJ40bn2
+!s100 BoWR2Mfzf^^?X;nDMj`Vl0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 7 demux_2 0 22 ZnYZ^3RBPP?<_h:NJ40bn2
+!i122 0
+l112
+L111 7
+VCNQ3<5_zj7TSPj69IS6T30
+!s100 WFCIm1FB`96@_BTR;oQP90
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edut
+Z25 w1780713856
+R2
+R3
+!i122 1
+R0
+Z26 8D:/Barrel Shifter/DUT.vhdl
+Z27 FD:/Barrel Shifter/DUT.vhdl
+l0
+L8 1
+VD1kVmifMeDYoGLV<b2Q8h1
+!s100 <dkG^P^>M>5;Em=PFLUO=0
+R6
+31
+R7
+!i10b 1
+R8
+Z28 !s90 -reportprogress|300|-93|-work|work|D:/Barrel Shifter/DUT.vhdl|
+Z29 !s107 D:/Barrel Shifter/DUT.vhdl|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 D1kVmifMeDYoGLV<b2Q8h1
+!i122 1
+l20
+L13 15
+VzoW1ZkFV=a0HIb=;UH1?d2
+!s100 gGekDfnoM:CgRCS5@Ijb:1
+R6
+31
+R7
+!i10b 1
+R8
+R28
+R29
+!i113 1
+R11
+R12
+Pgates
+R2
+R3
+!i122 0
+R1
+R0
+R4
+R5
+l0
+L3 1
+Vmb=;`LNS^PRQL`UP;kEMZ2
+!s100 G5DnL0FTNgNA<J]K2G^n12
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ehalf_adder
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L189 1
+Vbboa6[ID8KJ]C=4PVj<0A1
+!s100 bkHmUQ7ZF:4=X8:fDC5Do0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 10 half_adder 0 22 bboa6[ID8KJ]C=4PVj<0A1
+!i122 0
+l194
+L193 5
+VzOI>dTHQ:bnDa3kWRF8j@2
+!s100 W2@gIWEia08L^=9Io[no12
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Einverter
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L61 1
+V>P41jJc?DdLUGb[b<mkGZ2
+!s100 103N6jA3cQ3m<k3nkeHdJ2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 8 inverter 0 22 >P41jJc?DdLUGb[b<mkGZ2
+!i122 0
+l66
+L65 4
+VSZ8LL_fXcJC7j:L^F=7U51
+!s100 DP^eza2[Y`[JR<n_eWf^e2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Emux2
+Z30 w1780713970
+Z31 DPx4 work 5 gates 0 22 mb=;`LNS^PRQL`UP;kEMZ2
+R2
+R3
+!i122 8
+R0
+Z32 8D:/Barrel Shifter/mux2.vhd
+Z33 FD:/Barrel Shifter/mux2.vhd
+l0
+L5 1
+VhTQTBkc3=FJKoZIo`Q8o80
+!s100 nW4>z[oQe;K[?_^F]FTVJ0
+R6
+31
+R21
+!i10b 1
+R22
+Z34 !s90 -reportprogress|300|-93|-work|work|D:/Barrel Shifter/mux2.vhd|
+Z35 !s107 D:/Barrel Shifter/mux2.vhd|
+!i113 1
+R11
+R12
+Astruct
+R31
+R2
+R3
+DEx4 work 4 mux2 0 22 hTQTBkc3=FJKoZIo`Q8o80
+!i122 8
+l10
+L8 12
+VIiJ0kVnQ_a_HWJ<Yz`B>c3
+!s100 f@gUQ4J1IehCz[9UP_Cfk1
+R6
+31
+R21
+!i10b 1
+R22
+R34
+R35
+!i113 1
+R11
+R12
+Emux8bit
+Z36 w1780713791
+R2
+R3
+!i122 7
+R0
+Z37 8D:/Barrel Shifter/mux8bit.vhd
+Z38 FD:/Barrel Shifter/mux8bit.vhd
+l0
+L4 1
+V1_B44iUk3;Wj=4h[X54=J0
+!s100 V5Oj:T^ZQ`FZLc`E14IiA3
+R6
+31
+R21
+!i10b 1
+R22
+Z39 !s90 -reportprogress|300|-93|-work|work|D:/Barrel Shifter/mux8bit.vhd|
+Z40 !s107 D:/Barrel Shifter/mux8bit.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 7 mux8bit 0 22 1_B44iUk3;Wj=4h[X54=J0
+!i122 7
+l21
+L12 28
+VbDNN?X]OlAg>C0NUcmZd60
+!s100 IA8:0d?8NVojUUQDG9Z9g3
+R6
+31
+R21
+!i10b 1
+R22
+R39
+R40
+!i113 1
+R11
+R12
+Emux_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L72 1
+VPV_dhX0dBTK1l1G@U=@Cf0
+!s100 ohk4RgVMGkkl5l=27]<z82
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 mux_2 0 22 PV_dhX0dBTK1l1G@U=@Cf0
+!i122 0
+l77
+L76 4
+VLjN08ZzDh2Gbfek`QdZE@0
+!s100 <b70=LDH9eO]Y@Bl[WzVD1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Enand_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L133 1
+V@d[L1UPA0HWS1QVgYHz<o3
+!s100 RNl9ha7d2z^JdGUMS?`J71
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 6 nand_2 0 22 @d[L1UPA0HWS1QVgYHz<o3
+!i122 0
+l138
+L137 4
+V_E^OociF]C8f2E44NF48I2
+!s100 R2`d[>GAb3LBH4fUF`NC?2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Enor_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L155 1
+V`KYFnN[>gB>gZXJ;:@;H02
+!s100 Fk?^6NcIg6@oakzGX`H`e1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 nor_2 0 22 `KYFnN[>gB>gZXJ;:@;H02
+!i122 0
+l160
+L159 4
+Vn4D>7Xd<FiQRbXKFG>V<d2
+!s100 cD:=>`V<GiYGH:k4hFnSm1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eor_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L144 1
+VERZna9[6P_bc10bl[@QoT0
+!s100 e0lhI1D;o[D:;lm6eGPKG2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 4 or_2 0 22 ERZna9[6P_bc10bl[@QoT0
+!i122 0
+l149
+L148 4
+VeJlC2?z;Z08T5ezMPGQ832
+!s100 <BN6RDDCUV4N_fHEh?4;g3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eor_4
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L96 1
+V=b^PbzA=?EMG[=[bImQH21
+!s100 zil^PNFE_MTR@l5k;4=ZK1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 4 or_4 0 22 =b^PbzA=?EMG[=[bImQH21
+!i122 0
+l101
+L100 4
+V3Mgckn13YQ<1niXY6[nje3
+!s100 3Ck6BEbYW^ok=O;e4m>j90
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Es
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L83 1
+VM12:mF[SfOi9d<fa1>D@W2
+!s100 cER2zi2]gjZ;;RNGH3gA03
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 1 s 0 22 M12:mF[SfOi9d<fa1>D@W2
+!i122 0
+l88
+L87 6
+VYh259KB49MYE:hWMhF5AQ1
+!s100 kB7TF5jPdc`l9:OSojBIV3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eshift1
+Z41 w1780713710
+R2
+R3
+!i122 5
+R0
+Z42 8D:/Barrel Shifter/shift1.vhd
+Z43 FD:/Barrel Shifter/shift1.vhd
+l0
+L4 1
+V`O^Ni@_0:Q9T=FiM]JCj`3
+!s100 4bD0lK0j2SE[6l^=ie<V;2
+R6
+31
+R21
+!i10b 1
+R8
+Z44 !s90 -reportprogress|300|-93|-work|work|D:/Barrel Shifter/shift1.vhd|
+Z45 !s107 D:/Barrel Shifter/shift1.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 6 shift1 0 22 `O^Ni@_0:Q9T=FiM]JCj`3
+!i122 5
+l18
+L10 27
+Vd3QW3`[o4NT25ioDmogj]1
+!s100 aj9nSjJ^Ym<im;OW<<V4m0
+R6
+31
+R21
+!i10b 1
+R8
+R44
+R45
+!i113 1
+R11
+R12
+Eshift2
+Z46 w1780713679
+R2
+R3
+!i122 4
+R0
+Z47 8D:/Barrel Shifter/shift2.vhd
+Z48 FD:/Barrel Shifter/shift2.vhd
+l0
+L4 1
+VDg@z4oXUZ7Ql0oh<[:OfR2
+!s100 >5[NFHM>[3E]N7Tk@G3oX0
+R6
+31
+R7
+!i10b 1
+R8
+Z49 !s90 -reportprogress|300|-93|-work|work|D:/Barrel Shifter/shift2.vhd|
+Z50 !s107 D:/Barrel Shifter/shift2.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 6 shift2 0 22 Dg@z4oXUZ7Ql0oh<[:OfR2
+!i122 4
+l20
+L12 27
+VeeH23A[[8Aj<2KZ45`fSV2
+!s100 8P=7hz7im_[3=D^[NC__>1
+R6
+31
+R7
+!i10b 1
+R8
+R49
+R50
+!i113 1
+R11
+R12
+Eshift4
+Z51 w1780713646
+R2
+R3
+!i122 3
+R0
+Z52 8D:/Barrel Shifter/shift4.vhd
+Z53 FD:/Barrel Shifter/shift4.vhd
+l0
+L4 1
+VX=BPn_FR7F4NeJ9AdFcZM1
+!s100 1n_P4XDR2FYb55PV`^jdK0
+R6
+31
+R7
+!i10b 1
+R8
+Z54 !s90 -reportprogress|300|-93|-work|work|D:/Barrel Shifter/shift4.vhd|
+Z55 !s107 D:/Barrel Shifter/shift4.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 6 shift4 0 22 X=BPn_FR7F4NeJ9AdFcZM1
+!i122 3
+l18
+L10 26
+VE1RH9aP92=Gijjh6g8c]80
+!s100 6GNSno6:?M?KDbGZEGFod3
+R6
+31
+R7
+!i10b 1
+R8
+R54
+R55
+!i113 1
+R11
+R12
+Etestbench
+Z56 w1780475128
+R3
+R2
+!i122 9
+R0
+Z57 8D:/Barrel Shifter/Testbench.vhdl
+Z58 FD:/Barrel Shifter/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R21
+!i10b 1
+R22
+Z59 !s90 -reportprogress|300|-93|-work|work|D:/Barrel Shifter/Testbench.vhdl|
+!s107 D:/Barrel Shifter/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 9
+l69
+L9 132
+V]CgS?:^6H2=A?f<bKc3gz1
+!s100 XcfD4@>VZZGW6F9]Wi:UR3
+R6
+31
+R21
+!i10b 1
+R22
+R59
+Z60 !s107 D:/Barrel Shifter/Testbench.vhdl|
+!i113 1
+R11
+R12
+Exnor_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L178 1
+V3YJ>IGkXO=zMEGlemoJnH2
+!s100 nhl2nTQae?hDTT@X4W4j?3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 6 xnor_2 0 22 3YJ>IGkXO=zMEGlemoJnH2
+!i122 0
+l183
+L182 4
+V?5>Y?H1a[Y46Z`0001U@C2
+!s100 zSE[Eem7?i@3E6k^U6gcm3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Exor_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L167 1
+V>MS3V>_BMDY<Fdg_k;iFm2
+!s100 PRZ8^Q10F_N8Cg1KbKl<J1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 xor_2 0 22 >MS3V>_BMDY<Fdg_k;iFm2
+!i122 0
+l172
+L171 4
+V>9ZY30cDD<Bif8jB;g8?h0
+!s100 O:Q20efH8Scg7:`A75Jz_1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12

@@ -1,0 +1,120 @@
+|DUT
+input_vector[0] => mux4:add_instance.x0
+input_vector[1] => mux4:add_instance.x1
+input_vector[2] => mux4:add_instance.a1
+input_vector[3] => mux4:add_instance.a2
+input_vector[4] => mux4:add_instance.a3
+input_vector[5] => mux4:add_instance.a4
+input_vector[6] => mux4:add_instance.b1
+input_vector[7] => mux4:add_instance.b2
+input_vector[8] => mux4:add_instance.b3
+input_vector[9] => mux4:add_instance.b4
+input_vector[10] => mux4:add_instance.c1
+input_vector[11] => mux4:add_instance.c2
+input_vector[12] => mux4:add_instance.c3
+input_vector[13] => mux4:add_instance.c4
+input_vector[14] => mux4:add_instance.d1
+input_vector[15] => mux4:add_instance.d2
+input_vector[16] => mux4:add_instance.d3
+input_vector[17] => mux4:add_instance.d4
+output_vector[0] << mux4:add_instance.y0
+output_vector[1] << mux4:add_instance.y1
+output_vector[2] << mux4:add_instance.y2
+output_vector[3] << mux4:add_instance.y3
+
+
+|DUT|mux4:add_instance
+a1 => MUX4x1:g4.A0
+a2 => MUX4x1:g3.A0
+a3 => MUX4x1:g1.A0
+a4 => MUX4x1:g2.A0
+b1 => MUX4x1:g4.A1
+b2 => MUX4x1:g3.A1
+b3 => MUX4x1:g1.A1
+b4 => MUX4x1:g2.A1
+c1 => MUX4x1:g4.A2
+c2 => MUX4x1:g3.A2
+c3 => MUX4x1:g1.A2
+c4 => MUX4x1:g2.A2
+d1 => MUX4x1:g4.A3
+d2 => MUX4x1:g3.A3
+d3 => MUX4x1:g1.A3
+d4 => MUX4x1:g2.A3
+x1 => MUX4x1:g1.S1
+x1 => MUX4x1:g2.S1
+x1 => MUX4x1:g3.S1
+x1 => MUX4x1:g4.S1
+x0 => MUX4x1:g1.S0
+x0 => MUX4x1:g2.S0
+x0 => MUX4x1:g3.S0
+x0 => MUX4x1:g4.S0
+y3 <= MUX4x1:g2.Y
+y2 <= MUX4x1:g1.Y
+y1 <= MUX4x1:g3.Y
+y0 <= MUX4x1:g4.Y
+
+
+|DUT|mux4:add_instance|MUX4x1:g1
+A3 => Y.IN0
+A2 => Y.IN0
+A1 => Y.IN0
+A0 => Y.IN0
+S1 => Y.IN1
+S1 => Y.IN1
+S1 => Y.IN1
+S1 => Y.IN1
+S0 => Y.IN1
+S0 => Y.IN1
+S0 => Y.IN1
+S0 => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux4:add_instance|MUX4x1:g2
+A3 => Y.IN0
+A2 => Y.IN0
+A1 => Y.IN0
+A0 => Y.IN0
+S1 => Y.IN1
+S1 => Y.IN1
+S1 => Y.IN1
+S1 => Y.IN1
+S0 => Y.IN1
+S0 => Y.IN1
+S0 => Y.IN1
+S0 => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux4:add_instance|MUX4x1:g3
+A3 => Y.IN0
+A2 => Y.IN0
+A1 => Y.IN0
+A0 => Y.IN0
+S1 => Y.IN1
+S1 => Y.IN1
+S1 => Y.IN1
+S1 => Y.IN1
+S0 => Y.IN1
+S0 => Y.IN1
+S0 => Y.IN1
+S0 => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|mux4:add_instance|MUX4x1:g4
+A3 => Y.IN0
+A2 => Y.IN0
+A1 => Y.IN0
+A0 => Y.IN0
+S1 => Y.IN1
+S1 => Y.IN1
+S1 => Y.IN1
+S1 => Y.IN1
+S0 => Y.IN1
+S0 => Y.IN1
+S0 => Y.IN1
+S0 => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

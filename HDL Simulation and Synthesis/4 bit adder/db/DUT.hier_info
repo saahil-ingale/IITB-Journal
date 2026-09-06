@@ -1,0 +1,118 @@
+|DUT
+input_vector[0] => half:add_instance.mode
+input_vector[1] => half:add_instance.b1
+input_vector[2] => half:add_instance.b2
+input_vector[3] => half:add_instance.b3
+input_vector[4] => half:add_instance.b4
+input_vector[5] => half:add_instance.a1
+input_vector[6] => half:add_instance.a2
+input_vector[7] => half:add_instance.a3
+input_vector[8] => half:add_instance.a4
+output_vector[0] << half:add_instance.y1
+output_vector[1] << half:add_instance.y2
+output_vector[2] << half:add_instance.y3
+output_vector[3] << half:add_instance.y4
+output_vector[4] << half:add_instance.carry
+
+
+|DUT|half:add_instance
+b4 => XOR_2:g4.A
+b3 => XOR_2:g3.A
+b2 => XOR_2:g2.A
+b1 => XOR_2:g1.A
+a4 => FULL_ADDER:g8.A
+a3 => FULL_ADDER:g7.A
+a2 => FULL_ADDER:g6.A
+a1 => FULL_ADDER:g5.B
+mode => XOR_2:g1.B
+mode => XOR_2:g2.B
+mode => XOR_2:g3.B
+mode => XOR_2:g4.B
+mode => FULL_ADDER:g5.C
+y1 <= FULL_ADDER:g5.S
+y2 <= FULL_ADDER:g6.S
+y3 <= FULL_ADDER:g7.S
+y4 <= FULL_ADDER:g8.S
+carry <= FULL_ADDER:g8.Y
+
+
+|DUT|half:add_instance|XOR_2:g1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|half:add_instance|XOR_2:g2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|half:add_instance|XOR_2:g3
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|half:add_instance|XOR_2:g4
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|half:add_instance|FULL_ADDER:g5
+A => S.IN0
+A => Y.IN0
+A => Y.IN0
+B => S.IN1
+B => Y.IN1
+B => Y.IN0
+C => S.IN1
+C => Y.IN1
+C => Y.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|half:add_instance|FULL_ADDER:g6
+A => S.IN0
+A => Y.IN0
+A => Y.IN0
+B => S.IN1
+B => Y.IN1
+B => Y.IN0
+C => S.IN1
+C => Y.IN1
+C => Y.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|half:add_instance|FULL_ADDER:g7
+A => S.IN0
+A => Y.IN0
+A => Y.IN0
+B => S.IN1
+B => Y.IN1
+B => Y.IN0
+C => S.IN1
+C => Y.IN1
+C => Y.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|half:add_instance|FULL_ADDER:g8
+A => S.IN0
+A => Y.IN0
+A => Y.IN0
+B => S.IN1
+B => Y.IN1
+B => Y.IN0
+C => S.IN1
+C => Y.IN1
+C => Y.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,136 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Fibonacci/simulation/modelsim
+Edemux
+Z1 w1780598747
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z5 8D:/Fibonacci/demux.vhd
+Z6 FD:/Fibonacci/demux.vhd
+l0
+L5 1
+V0IKX:4LDJB3U4mZb]83KU0
+!s100 DP6G=L>BFfK@Y2Dcc:^KB2
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1780599052
+!i10b 1
+Z9 !s108 1780599052.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|D:/Fibonacci/demux.vhd|
+Z11 !s107 D:/Fibonacci/demux.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehav
+R2
+R3
+R4
+DEx4 work 5 demux 0 22 0IKX:4LDJB3U4mZb]83KU0
+!i122 1
+l13
+L12 21
+VZZ[NK=28EX5JPRF;^M^H?0
+!s100 bQh7WD0;WGj9M]Ub[M^]>3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Edut
+Z14 w1780598735
+R3
+R4
+!i122 0
+R0
+Z15 8D:/Fibonacci/DUT.vhdl
+Z16 FD:/Fibonacci/DUT.vhdl
+l0
+L4 1
+VdP0E5U@HL]=0gjc;e707K2
+!s100 ?YdjD;XIb?:9;P2LJJj`=2
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|D:/Fibonacci/DUT.vhdl|
+Z18 !s107 D:/Fibonacci/DUT.vhdl|
+!i113 1
+R12
+R13
+Adutwrap
+R3
+R4
+DEx4 work 3 dut 0 22 dP0E5U@HL]=0gjc;e707K2
+!i122 0
+l21
+L11 20
+VIF;CA?eXLN?3D0iVgG<eN2
+!s100 7Jiz@bafXG>P0Ci[NDFo11
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Etestbench
+Z19 w1780598995
+R4
+R3
+!i122 2
+R0
+Z20 8D:/Fibonacci/Testbench.vhdl
+Z21 FD:/Fibonacci/Testbench.vhdl
+l0
+L7 1
+V_>?75k^hTgCYmJzf:T[Ne1
+!s100 HBBAOZ=mbdBC1C;aN@`720
+R7
+31
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-93|-work|work|D:/Fibonacci/Testbench.vhdl|
+!s107 D:/Fibonacci/Testbench.vhdl|
+!i113 1
+R12
+R13
+Abehave
+R4
+R3
+DEx4 work 9 testbench 0 22 _>?75k^hTgCYmJzf:T[Ne1
+!i122 2
+l69
+L9 132
+VNOAAhF6>YEZPUXD]ejMCY0
+!s100 _0[?fW[GaoIIkJn^e_Fc70
+R7
+31
+R8
+!i10b 1
+R9
+R22
+Z23 !s107 D:/Fibonacci/Testbench.vhdl|
+!i113 1
+R12
+R13

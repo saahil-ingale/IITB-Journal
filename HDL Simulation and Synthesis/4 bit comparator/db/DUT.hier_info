@@ -1,0 +1,44 @@
+|DUT
+input_vector[0] => andy:add_instance.D[0]
+input_vector[1] => andy:add_instance.D[1]
+input_vector[2] => andy:add_instance.D[2]
+input_vector[3] => andy:add_instance.D[3]
+input_vector[4] => andy:add_instance.C[0]
+input_vector[5] => andy:add_instance.C[1]
+input_vector[6] => andy:add_instance.C[2]
+input_vector[7] => andy:add_instance.C[3]
+output_vector[0] <= andy:add_instance.Y[0]
+output_vector[1] <= andy:add_instance.Y[1]
+output_vector[2] <= andy:add_instance.Y[2]
+
+
+|DUT|andy:add_instance
+C[0] => LessThan0.IN4
+C[0] => Equal0.IN3
+C[0] => LessThan1.IN4
+C[1] => LessThan0.IN3
+C[1] => Equal0.IN2
+C[1] => LessThan1.IN3
+C[2] => LessThan0.IN2
+C[2] => Equal0.IN1
+C[2] => LessThan1.IN2
+C[3] => LessThan0.IN1
+C[3] => Equal0.IN0
+C[3] => LessThan1.IN1
+D[0] => LessThan0.IN8
+D[0] => Equal0.IN7
+D[0] => LessThan1.IN8
+D[1] => LessThan0.IN7
+D[1] => Equal0.IN6
+D[1] => LessThan1.IN7
+D[2] => LessThan0.IN6
+D[2] => Equal0.IN5
+D[2] => LessThan1.IN6
+D[3] => LessThan0.IN5
+D[3] => Equal0.IN4
+D[3] => LessThan1.IN5
+Y[0] <= Y[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

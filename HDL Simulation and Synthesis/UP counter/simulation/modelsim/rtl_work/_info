@@ -1,0 +1,177 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/FY/IITB/IITB Course1/UP counter/simulation/modelsim
+Ed_flip_flop
+Z1 w1780636426
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z4 8E:/FY/IITB/IITB Course1/UP counter/demux.vhd
+Z5 FE:/FY/IITB/IITB Course1/UP counter/demux.vhd
+l0
+L36 1
+VI`eCEY^EnmDlid04D3O^53
+!s100 eeDKQ<_F2EE2T4<Eg0_d21
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1784550454
+!i10b 1
+Z8 !s108 1784550454.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|E:/FY/IITB/IITB Course1/UP counter/demux.vhd|
+Z10 !s107 E:/FY/IITB/IITB Course1/UP counter/demux.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Astruct
+R2
+R3
+DEx4 work 11 d_flip_flop 0 22 I`eCEY^EnmDlid04D3O^53
+!i122 1
+l61
+L44 36
+V`3m>N5UcQC^f;1>72R3zi1
+!s100 AfIndb900?W`69YkNYaPc3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edff_set
+R1
+R2
+R3
+!i122 1
+R0
+R4
+R5
+l0
+L7 1
+VdG=W`0X>KCzC9;NoV]4OY3
+!s100 h1FZWU0?COC4_iAc5YRQB2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehav
+R2
+R3
+DEx4 work 7 dff_set 0 22 dG=W`0X>KCzC9;NoV]4OY3
+!i122 1
+l17
+L16 12
+V]Iei9md4j7i<co4?bX:1F0
+!s100 ;:AT^;4TTXLS=ZW^X@nJU0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edut
+Z13 w1780636439
+Z14 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+!i122 0
+R0
+Z15 8E:/FY/IITB/IITB Course1/UP counter/DUT.vhdl
+Z16 FE:/FY/IITB/IITB Course1/UP counter/DUT.vhdl
+l0
+L5 1
+V=HBH;5M2Z?UQ;[_dHE@_93
+!s100 ZQ3<]FhI__FSllH5z3jJK3
+R6
+31
+R7
+!i10b 1
+Z17 !s108 1784550453.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|E:/FY/IITB/IITB Course1/UP counter/DUT.vhdl|
+Z19 !s107 E:/FY/IITB/IITB Course1/UP counter/DUT.vhdl|
+!i113 1
+R11
+R12
+Adutwrap
+R14
+R2
+R3
+DEx4 work 3 dut 0 22 =HBH;5M2Z?UQ;[_dHE@_93
+!i122 0
+l23
+L12 22
+VRGBocaUm19e7igHDig7Tl2
+!s100 H6=aWbRlA[Vz:=B8<l7:43
+R6
+31
+R7
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Etestbench
+Z20 w1780636462
+R3
+R2
+!i122 2
+R0
+Z21 8E:/FY/IITB/IITB Course1/UP counter/Testbench.vhdl
+Z22 FE:/FY/IITB/IITB Course1/UP counter/Testbench.vhdl
+l0
+L7 1
+V_>?75k^hTgCYmJzf:T[Ne1
+!s100 HBBAOZ=mbdBC1C;aN@`720
+R6
+31
+R7
+!i10b 1
+R8
+Z23 !s90 -reportprogress|300|-93|-work|work|E:/FY/IITB/IITB Course1/UP counter/Testbench.vhdl|
+!s107 E:/FY/IITB/IITB Course1/UP counter/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 _>?75k^hTgCYmJzf:T[Ne1
+!i122 2
+l69
+L9 132
+VlPDi41QfZijkSTJY3IWSz1
+!s100 @@ESlm]4mC=RdU2MJ`B`_3
+R6
+31
+R7
+!i10b 1
+R8
+R23
+Z24 !s107 E:/FY/IITB/IITB Course1/UP counter/Testbench.vhdl|
+!i113 1
+R11
+R12

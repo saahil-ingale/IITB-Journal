@@ -1,0 +1,55 @@
+|DUT
+input_vector[0] => demux:add_instance.A[0]
+input_vector[1] => demux:add_instance.A[1]
+input_vector[2] => demux:add_instance.A[2]
+output_vector[0] <= demux:add_instance.Y[0]
+output_vector[1] <= demux:add_instance.Y[1]
+output_vector[2] <= demux:add_instance.Y[2]
+output_vector[3] <= demux:add_instance.Y[3]
+output_vector[4] <= demux:add_instance.Y[4]
+output_vector[5] <= demux:add_instance.Y[5]
+output_vector[6] <= demux:add_instance.Y[6]
+output_vector[7] <= demux:add_instance.Y[7]
+
+
+|DUT|demux:add_instance
+A[0] => DEM8:g1.A[0]
+A[1] => DEM8:g1.A[1]
+A[2] => DEM8:g1.A[2]
+Y[0] <= DEM8:g1.Y[0]
+Y[1] <= DEM8:g1.Y[1]
+Y[2] <= DEM8:g1.Y[2]
+Y[3] <= DEM8:g1.Y[3]
+Y[4] <= DEM8:g1.Y[4]
+Y[5] <= DEM8:g1.Y[5]
+Y[6] <= DEM8:g1.Y[6]
+Y[7] <= DEM8:g1.Y[7]
+
+
+|DUT|demux:add_instance|DEM8:g1
+A[0] => Y.IN0
+A[0] => Y.IN0
+A[0] => Y.IN0
+A[0] => Y.IN0
+A[1] => Y.IN1
+A[1] => Y.IN1
+A[1] => Y.IN1
+A[1] => Y.IN1
+A[2] => Y.IN1
+A[2] => Y.IN1
+A[2] => Y.IN1
+A[2] => Y.IN1
+A[2] => Y.IN1
+A[2] => Y.IN1
+A[2] => Y.IN1
+A[2] => Y.IN1
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[7] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

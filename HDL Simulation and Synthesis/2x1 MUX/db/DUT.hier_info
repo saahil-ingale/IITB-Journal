@@ -1,0 +1,22 @@
+|DUT
+input_vector[0] => mux2:add_instance.s
+input_vector[1] => mux2:add_instance.b
+input_vector[2] => mux2:add_instance.a
+output_vector[0] << mux2:add_instance.output
+
+
+|DUT|mux2:add_instance
+a => MUX2x1:g1.A
+b => MUX2x1:g1.B
+s => MUX2x1:g1.S
+output <= MUX2x1:g1.Y
+
+
+|DUT|mux2:add_instance|MUX2x1:g1
+A => Y.IN0
+B => Y.IN0
+S => Y.IN1
+S => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

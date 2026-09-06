@@ -1,0 +1,136 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/FF/simulation/modelsim
+Ed_ff
+Z1 w1780684052
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+!i122 1
+R0
+Z5 8D:/FF/demux.vhd
+Z6 FD:/FF/demux.vhd
+l0
+L5 1
+VcP>P3VZj2M9e7UCHARIhR2
+!s100 VKh?8PgLFZg?KB7OI:?_H1
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1780684255
+!i10b 1
+Z9 !s108 1780684255.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|D:/FF/demux.vhd|
+Z11 !s107 D:/FF/demux.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Amain
+R2
+R3
+R4
+DEx4 work 4 d_ff 0 22 cP>P3VZj2M9e7UCHARIhR2
+!i122 1
+l15
+L14 14
+V95B`H065]2R_^lmXSTC630
+!s100 JC;B1Q8l5I3Pd^Min5gFb0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Edut
+Z14 w1780641833
+R3
+R2
+!i122 0
+R0
+Z15 8D:/FF/DUT.vhdl
+Z16 FD:/FF/DUT.vhdl
+l0
+L4 1
+Vjz:DATg[JjfzZUX_:LOZj0
+!s100 V_>fLlFYPGZ4oF0;ILfPD0
+R7
+31
+R8
+!i10b 1
+Z17 !s108 1780684254.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|D:/FF/DUT.vhdl|
+Z19 !s107 D:/FF/DUT.vhdl|
+!i113 1
+R12
+R13
+Adutwrap
+R3
+R2
+DEx4 work 3 dut 0 22 jz:DATg[JjfzZUX_:LOZj0
+!i122 0
+l20
+L11 21
+Vfo?k6VY2:0:4;8Kb08[Dz2
+!s100 5LgnKN<[C2THzz[23[HB<2
+R7
+31
+R8
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Etestbench
+Z20 w1780684172
+R2
+R3
+!i122 2
+R0
+Z21 8D:/FF/Testbench.vhdl
+Z22 FD:/FF/Testbench.vhdl
+l0
+L7 1
+V_>?75k^hTgCYmJzf:T[Ne1
+!s100 HBBAOZ=mbdBC1C;aN@`720
+R7
+31
+R8
+!i10b 1
+R9
+Z23 !s90 -reportprogress|300|-93|-work|work|D:/FF/Testbench.vhdl|
+!s107 D:/FF/Testbench.vhdl|
+!i113 1
+R12
+R13
+Abehave
+R2
+R3
+DEx4 work 9 testbench 0 22 _>?75k^hTgCYmJzf:T[Ne1
+!i122 2
+l69
+L9 132
+V35T90MSzo=jMe^HDQ:LV;1
+!s100 @]HoRND;NARCKg?3fU7Io1
+R7
+31
+R8
+!i10b 1
+R9
+R23
+Z24 !s107 D:/FF/Testbench.vhdl|
+!i113 1
+R12
+R13

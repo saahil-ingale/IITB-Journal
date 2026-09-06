@@ -1,0 +1,112 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity students is
+    port(
+        inp          : in std_logic_vector(4 downto 0); -- [cite: 232]
+        reset, clock : in std_logic;                    -- [cite: 233]
+        outp         : out std_logic                    -- [cite: 234]
+    );
+end students; -- [cite: 235]
+
+architecture bhy of students is -- [cite: 236]
+    type state is (rst, s1, s2, s3, s4, s5, s6, s7); -- [cite: 238, 240]
+    signal y_present, y_next: state := rst; -- [cite: 242]
+begin
+
+    -- State Register Process
+    clock_proc: process(clock) -- [cite: 244]
+    begin
+        if (clock'event and clock = '1') then -- [cite: 246]
+            if (reset = '1') then -- [cite: 247]
+                y_present <= rst; -- [cite: 248]
+            else
+                y_present <= y_next; -- [cite: 251]
+            end if;
+        end if;
+    end process; -- [cite: 255]
+
+    -- Next State & Output Logic Process combined to handle manual tracefile clocking
+    state_transition_proc: process (inp, y_present) -- [cite: 256]
+    begin
+        -- Default assignments to prevent latches
+        y_next <= rst;
+        outp   <= '0';
+
+        case y_present is
+            when rst =>
+                if (unsigned(inp) = 19) then -- 's' detected [cite: 260]
+                    y_next <= s1; -- [cite: 261]
+                else
+                    y_next <= rst; -- [cite: 263]
+                end if;
+
+            when s1 =>
+                if (unsigned(inp) = 20) then -- 't' detected
+                    y_next <= s2;
+                elsif (unsigned(inp) = 19) then -- Keep checking 's'
+                    y_next <= s1;
+                else
+                    y_next <= rst;
+                end if;
+
+            when s2 =>
+                if (unsigned(inp) = 21) then -- 'u' detected
+                    y_next <= s3;
+                elsif (unsigned(inp) = 19) then
+                    y_next <= s1;
+                else
+                    y_next <= rst;
+                end if;
+
+            when s3 =>
+                if (unsigned(inp) = 4) then -- 'd' detected
+                    y_next <= s4;
+                elsif (unsigned(inp) = 19) then
+                    y_next <= s1;
+                else
+                    y_next <= rst;
+                end if;
+
+            when s4 =>
+                if (unsigned(inp) = 5) then -- 'e' detected
+                    y_next <= s5;
+                elsif (unsigned(inp) = 19) then
+                    y_next <= s1;
+                else
+                    y_next <= rst;
+                end if;
+
+            when s5 =>
+                if (unsigned(inp) = 14) then -- 'n' detected
+                    y_next <= s6;
+                elsif (unsigned(inp) = 19) then
+                    y_next <= s1;
+                else
+                    y_next <= rst;
+                end if;
+
+            when s6 =>
+                if (unsigned(inp) = 20) then -- 't' detected
+                    y_next <= s7;
+                elsif (unsigned(inp) = 19) then
+                    y_next <= s1;
+                else
+                    y_next <= rst;
+                end if;
+
+            when s7 =>
+                if (unsigned(inp) = 19) then -- 's' detected (Completes sequence!)
+                    y_next <= s1;
+                    outp   <= '1'; -- Mealy output goes high on the transition condition
+                else
+                    y_next <= rst;
+                end if;
+
+            when others =>
+                y_next <= rst;
+        end case;
+    end process;
+
+end bhy;
