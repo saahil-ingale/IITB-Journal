@@ -1,0 +1,1 @@
+These projects were done in the NgSpice software. This software is used to simulate circuits using it's language. The software differs from others because there is an option to have multiple variables being varied and have complete analysis in one go.
